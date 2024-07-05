@@ -1,0 +1,25 @@
+{
+    "name": "wellington/app",
+
+    "require": {"php": ">=5.3",
+        "klein/klein": "^2.1" },
+
+        "minimum-stability": "alpha",
+
+    "description": "Sistema no padrão MVC",
+        
+        "type": "project",
+        
+    "authors": [
+            {
+                "name": "Wellingtonrsl", "email": "well292019@gmail.com"
+            }
+        ],
+        
+        
+    "autoload": { "psr-4": {
+        "FrameworkAULA\\":"vendor/frameworkAULA/","App\\": "app"
+            }
+    }
+
+}
