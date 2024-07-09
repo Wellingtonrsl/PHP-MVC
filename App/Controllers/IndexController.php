@@ -1,12 +1,27 @@
 <?php
 
-namespace App\Controllers; 
+namespace App\Controllers;
 
-class IndexController{
+use FrameworkAULA\Http\Controller;
 
-    public function index(){
-        echo "Wellington Rodrigues";
-    }
+class IndexController extends BaseController{
+
+	public function index(){
+		$this->service->render('home/list.home.phtml');
+		
+	}
+
+
+	public function cadCliente(){
+		$this->service->render('home/cad.home.phtml');
+		
+	}
+
+
+	public function editCliente(){
+		$this->service->render('home/edit.home.phtml');
+		
+	}
 
 }
 
